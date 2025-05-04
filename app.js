@@ -34,8 +34,8 @@ setTimeout(function(){
 };
 
 
-var Boxer1_health = document.getElementById("Boxer1_health");
-var Boxer2_health = document.getElementById("Boxer2_health");
+var Usyk_health = document.getElementById("Usyk_health");
+var Crawford_health = document.getElementById("Crawford_health");
 var player1_name = document.getElementById("player1_name");
 var player2_name = document.getElementById("player2_name");
 
@@ -43,10 +43,10 @@ var player2_name = document.getElementById("player2_name");
 Character.prototype.status = function () {
   // return this.health;
 
-  Boxer1_health.innerText = `score : ${Boxer1.health}`;
-  Boxer2_health.innerText = `score : ${Boxer2.health}`;
-  player1_name.innerText = Boxer1.name;
-  player2_name.innerText = Boxer2.name;
+  Usyk_health.innerText = `score : ${Usyk.health}`;
+  Crawford_health.innerText = `score : ${Crawford.health}`;
+  player1_name.innerText = Usyk.name;
+  player2_name.innerText = Crawford.name;
 
 
 };
@@ -60,35 +60,35 @@ Character.prototype.makeHealth = function () {
   }
 };
 
-let Boxer1 = new Character("Boxer1", 50, 300);
-let Boxer2 = new Character("Boxer2", 50, 300);
+let Usyk = new Character("Usyk", 50, 300);
+let Crawford = new Character("Crawford", 50, 300);
 
 
-var Player1 = document.getElementById("Boxer1-player");
-var Player2 = document.getElementById("Boxer2-player");
+var Player1 = document.getElementById("Usyk-player");
+var Player2 = document.getElementById("Crawford-player");
 
 
-Boxer1.status();
-Boxer2.status();
+Usyk.status();
+Crawford.status();
 
-function AttacBoxer1() {
-  // Boxer1.makeHealth();
+function AttacUsyk() {
+  // Usyk.makeHealth();
 
-   Boxer1.attack(Boxer2);
+   Usyk.attack(Crawford);
   Player1.setAttribute("src", "./Attac1.jpg");
   Player1.style.width = "500px";
   Player1.style.height = "450px";
   Player1.style.marginRight = "-300px";
-  Boxer1.status();
+  Usyk.status();
 
-  Player2.setAttribute("src", "./Boxer2.jpg");
+  Player2.setAttribute("src", "./Crawford.jpg");
   Player2.style.width = "300px";
   Player2.style.height = "450px";
   Player2.style.marginLeft = "0px";
 
   setTimeout(function(){
 
-    Player1.setAttribute("src", "./Boxer1.jpg");
+    Player1.setAttribute("src", "./Usyk.jpg");
     Player1.style.width = "300px";
     Player1.style.height = "500px";
     Player1.style.marginRight = "0px";
@@ -98,22 +98,22 @@ function AttacBoxer1() {
 }
   
 
-function AttacBoxer2() {
-  // Boxer1.makeHealth();
-  Boxer2.attack(Boxer1);
+function AttacCrawford() {
+  // Usyk.makeHealth();
+  Crawford.attack(Usyk);
   Player2.setAttribute("src", "./Attac2.jpg");
   Player2.style.width = "400px";
   Player2.style.marginLeft = "-200px";
 
-  Boxer2.status();
+  Crawford.status();
 
-  Player1.setAttribute("src", "./Boxer1.jpg");
+  Player1.setAttribute("src", "./Usyk.jpg");
   Player1.style.width = "300px";
   Player1.style.height = "500px";
   Player1.style.marginRight = "0px";
 
   setTimeout(function(){
-  Player2.setAttribute("src", "./Boxer2.jpg");
+  Player2.setAttribute("src", "./Crawford.jpg");
   Player2.style.width = "300px";
   Player2.style.height = "450px";
   Player2.style.marginLeft = "0px";
@@ -126,8 +126,8 @@ var gameStart =  document.getElementById("gameStart");
 function startGame(){
 gameStart.style.display = "none";
 }
-//  document.getElementById("Boxer1-attack").addEventListener("click", AttacBoxer1);
-//  document.getElementById("Boxer2-attack").addEventListener("click", AttacBoxer2);
+//  document.getElementById("Usyk-attack").addEventListener("click", AttacUsyk);
+//  document.getElementById("Crawford-attack").addEventListener("click", AttacCrawford);
 
 
 $(document).onkeydown = function(e) {
