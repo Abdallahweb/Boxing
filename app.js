@@ -118,7 +118,7 @@ function AttacCrawford() {
   Player2.style.height = "450px";
   Player2.style.marginLeft = "0px";
   
-  }, 300);
+  }, 500);
 }
 
 var gameStart =  document.getElementById("gameStart");
