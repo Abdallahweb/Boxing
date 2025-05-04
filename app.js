@@ -93,7 +93,7 @@ function AttacUsyk() {
     Player1.style.height = "500px";
     Player1.style.marginRight = "0px";
   
-  }, 200);
+  }, 300);
 
 }
   
@@ -118,7 +118,7 @@ function AttacCrawford() {
   Player2.style.height = "450px";
   Player2.style.marginLeft = "0px";
   
-  }, 200);
+  }, 300);
 }
 
 var gameStart =  document.getElementById("gameStart");
