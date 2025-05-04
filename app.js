@@ -157,6 +157,22 @@ e.preventDefault();
 }, false);
 
 
+document.addEventListener("keydown", function (event){
+
+  if (event.ctrlKey){
+
+     event.preventDefault();
+
+  }
+
+  if(event.keyCode == 123){
+
+     event.preventDefault();
+
+  }
+
+})
+
 $(document).keydown(function (event) {
 if (event.keyCode == 123) { // Prevent F12
   return false;
