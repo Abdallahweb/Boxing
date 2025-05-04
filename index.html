@@ -1,1 +1,68 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" href="./icon"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&amp;display=swap" rel="stylesheet"><title>Boxing Game</title><link rel="stylesheet" href="./style.css"></head><body><div id="gameStart"><button id="strBtn" onclick="startGame()">Start Game</button></div><div id="gameOver" style="display:none"><div style="color:#fff;position:absolute;top:50%;left:50%;width:500px;margin-left:-250px;text-align:center"><h1 id="winner"></h1></div></div><img src="./BoxerAttac.png" id="Usyk-attack" onclick="AttacUsyk()"> <img src="./BoxerAttac.png" id="Crawford-attack" onclick="AttacCrawford()"><div id="HealthProgress"><div style="display:flex;position:relative"><img src="./Usyk.jpg" id="UsykImg"><div id="Usyk-progress"><span id="Usyk-span"></span><span id="Usyk_health" style="color:#fff;text-align:left;position:absolute;right:30px;top:0;font-weight:700"></span></div><h1 id="player1_name" style="text-shadow:1px 4px #300fc2;color:#cecfe7;position:absolute;left:210px;display:block"></h1></div><div style="display:flex"><h1 id="player2_name" style="text-shadow:1px 4px #c2240f;color:#ecd6d6;position:absolute;right:330px;display:block"></h1><div id="Crawford-progress"><span id="Crawford-span"></span><span id="Crawford_health" style="color:#fff;text-align:right;position:absolute;left:30px;top:0;font-weight:700"></span></div><img src="./Crawford.jpg" id="CrawfordImg"></div></div><div style="display:flex;justify-content:center"><img src="./Usyk.jpg" style="width:300px;height:500px" id="Usyk-player"> <img src="./Crawford.jpg" style="width:300px;height:450px;margin-top:50px" id="Crawford-player"></div><div style="z-index:1000000000000;position:absolute;bottom:30px;text-align:center;width:200px;left:50%;margin-left:-100px"><h6 style="color:#fff;font-family:Arial,Helvetica,sans-serif">Developed By<a href="https://abdallahweb.github.io/resume/" style="color:#fff;font-family:Arial,Helvetica,sans-serif">Abdallah Fouad</a></h6></div><script src="./query.js" defer="defer"></script><script src="./app.js" defer="defer"></script></script></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&amp;display=swap" rel="stylesheet">
+    <title>Boxing Game</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div id="gameStart">
+        <button  id="strBtn" onclick="startGame()">Start Game</button></div>
+
+    <div id="gameOver" style="display: none;"><div style="color: #fff;position: absolute;top:50%;left: 50%;width:500px;margin-left: -250px;text-align: center;">
+        
+        <h1 id="winner" ></h1>
+
+    </div></div>
+    <img src="./BoxerAttac.png" id="Boxer1-attack" onclick="AttacBoxer1()">
+    <img src="./BoxerAttac.png" id="Boxer2-attack" onclick="AttacBoxer2()">
+
+  
+    <div id="HealthProgress">
+
+        <div style="display: flex;position: relative;">
+        <img src="./Boxer1.jpg" id="Boxer1Img">
+        <div id="Boxer1-progress">
+
+        <span id="Boxer1-span" ></span>
+        <span id="Boxer1_health" style="color:#fff;text-align: left;position: absolute;right:30px;top:0px;font-weight: bold;"></span>
+
+        </div>
+        <h1 id="player1_name" style="text-shadow: 1px 4px #300fc2;color:#cecfe7;position: absolute;left: 210px;display: block;"></h1>
+
+    </div>
+
+
+    <div style="display: flex;">
+        <h1 id="player2_name" style="text-shadow: 1px 4px #c2240f;color:#ecd6d6;;position: absolute;right: 330px;display: block;"></h1>
+         <div id="Boxer2-progress">
+
+            <span id="Boxer2-span"  >       
+            </span>
+            <span id="Boxer2_health" style="color:#fff;text-align: right;position: absolute;left:30px;top:0px;font-weight: bold;"></span>
+
+            </div>
+        <img src="./Boxer2.jpg"  id="Boxer2Img">
+
+    </div>
+
+    
+    </div>
+   
+   
+    <div style="display: flex;justify-content: center;">
+    <img src="./Boxer1.jpg" style="width: 300px;height:500px" id="Boxer1-player" >
+    <img src="./Boxer2.jpg" style="width: 300px;height:450px;margin-top: 50px;"  id="Boxer2-player">
+</div>
+
+<div style=z-index:1000000000000;position:absolute;bottom:30px;text-align:center;width:200px;left:50%;margin-left:-100px><h6 style=color:#fff;font-family:Arial,Helvetica,sans-serif>Developed By <a href=https://abdallahweb.github.io/resume/ style=color:#fff;font-family:Arial,Helvetica,sans-serif>Abdallah Fouad</a></h6></div>
+<script src="./query.js" ></script>    
+<script src="./app.js" ></script>
+
+</body>
+</html>
